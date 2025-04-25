@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Queue Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hypermart Checkout System</h1>
+    <h5>Real-time queue managemant system</h5>
+
+    <input type="number" id="iteminput" placeholder="Enter number of items" />
+    <button onclick="addCustomer()">Checkout Items</button>
+
+    <div class="container">
+      <div class="counter" id="counter1">
+        <h3>Counter 1</h3>
+
+        <div class="customer-count">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+            />
+          </svg>
+          <span id="cc1"></span>
+        </div>
+        <ul id="q1"></ul>
+        <p id="total1">Total Items: 0</p>
+      </div>
+      <div class="counter" id="counter2">
+        <h3>Counter 2</h3>
+
+        <div class="customer-count">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+            />
+          </svg>
+          <span id="cc2"> </span>
+        </div>
+        <ul id="q2"></ul>
+
+        <p id="total2">Total Items: 0</p>
+      </div>
+      <div class="counter" id="counter3">
+        <h3>Counter 3</h3>
+        <div class="customer-count">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+            />
+          </svg>
+          <span id="cc3"></span>
+        </div>
+
+        <ul id="q3"></ul>
+        <p id="total3">Total Items: 0</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
